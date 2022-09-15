@@ -1,0 +1,133 @@
+:root {
+  --beige: #F6F1D1;
+  --green: #70A9A1;
+  --darkGreen: #0B2027;
+  /* --evenDarkerGreen:#091A20; */
+  --evenDarkerGreen:#040D10;
+} 
+body {
+  background-color: var(--beige);
+}
+* {
+  color: whitesmoke;
+}
+
+.App {
+  text-align: center;
+}
+
+.app__title{
+  color: var(--darkGreen);
+  font-size: 34px;
+}
+
+.puppies {
+display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.puppie {
+  margin: 20px;
+  background-color: var(--darkGreen);
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  display: flex;        
+  flex-direction: column;
+  height: 400px;
+}
+
+
+
+.puppie__img {
+  border-radius: 12px;
+  width: 300px; 
+  height: 300px;
+  margin: auto;
+  transition: 500ms;
+}
+.imgSmall{
+ width: 150px; 
+ height: 150px;
+ align-self: center;
+}
+
+.puppie__title {
+  color: var(--beige);
+}
+
+.puppie__breed {
+  color: var(--beige);
+}
+
+.puppie__birthdate {
+  color: var(--beige);
+}
+
+.puppie__updateBtn{
+  margin-bottom: 10px;
+}
+.puppie__updateBtn,
+.puppie__deleteBtn {
+  padding: 10px;
+  margin-inline: 20px;
+  color: white;
+  border:1px solid transparent;
+  border-radius: 5px;
+  background-color: var(--green);
+  cursor:pointer;
+  transition: 500ms;
+  color: var(--beige);
+
+}
+
+
+.form {
+  background-color: var(--darkGreen);
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: fit-content;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.form__input {
+  border: 1px solid var(--green);
+  border-radius: 8px;
+  padding: 5px;
+  font-size:18px;
+  background-color: transparent;
+  color:var(--beige);   
+}
+.form__hidden {
+  color:transparent;
+}
+.form__label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 10px;
+}
+label p {
+  color: var(--beige);
+}
+
+.form__submit {
+  cursor:pointer;
+  padding: 10px;
+  margin-inline: 20px;
+  color: white;
+  border:1px solid transparent;
+  color: var(--beige);
+  border-radius: 5px;
+  background-color: var(--green);
+  transition: 500ms;
+}
+.puppie__updateBtn:hover,
+.puppie__deleteBtn:hover,
+.form__submit:hover {
+  background-color: var(--darkGreen);
+  border:1px solid var(--green);
+
+}
